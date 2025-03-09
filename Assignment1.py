@@ -23,14 +23,19 @@ def check_number(number):
 # Function 4: For Loop – Making a Star Shape
 # This function should return a string representing a star shape.
 def star_shape(rows):
-    # TODO: Implement this function
-    pass  # Replace with your code
+    for i in range(1, 6):
+        for j in range(1, i + 1):
+            print("*", end="")
+        print()
 
 # Function 5: While Loop – Counting Multiples of 3
 # This function should return a list of numbers from 1 to limit, replacing multiples of 3 with "Multiple of 3".
 def count_multiples_of_3(limit):
-    # TODO: Implement this function
-    pass  # Replace with your code
+    while limit <= 20:
+        if limit % 3 == 0:
+            return "Multiple of 3"
+        else:
+            return limit
 
 # Function 6: Sum of Even Numbers in a Range
 # This function should calculate and return the sum of even numbers within a given range.
