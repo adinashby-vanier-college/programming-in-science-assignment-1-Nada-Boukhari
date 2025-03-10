@@ -40,5 +40,10 @@ def count_multiples_of_3(limit):
 # Function 6: Sum of Even Numbers in a Range
 # This function should calculate and return the sum of even numbers within a given range.
 def sum_of_even_numbers(start, end):
-    # TODO: Implement this function
-    pass  # Replace with your code
+    for number in range(start, end):
+        number = int(input("Enter a number:"))
+        while number < 0:
+            number = int(input("Enter a number:"))
+        else:
+            return number
+    number += 1
